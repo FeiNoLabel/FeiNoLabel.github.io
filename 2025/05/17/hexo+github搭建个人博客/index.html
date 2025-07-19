@@ -20,17 +20,20 @@
   <title>hexo+github搭建个人博客 - codeoapper</title>
 
   
-    <meta name="description" content="常用的命令部署成功后，安装包的在hexoblog路径hexo g 生成静态网页hexo d 部署到githubhexo clean 清楚hexo缓存，即清除public文件夹hexo g –d 生成并部署 https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_42365530&#x2F;article&#x2F;details&#x2F;107750003https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;60578">
+    <meta name="description" content="github pages搭建博客1） hexo安装    官网有命令（https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;） 2）创建博客文件夹    这里博客文件夹名字为：my-blog；    这里的文件夹和github仓库文件，不是一个，github仓库文件是hexo 推送过去，因此本地博客文件夹最好再单独建立一个github仓库作备份。 hexo init my-blog cd my-blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo+github搭建个人博客">
 <meta property="og:url" content="http://www.codepapper.com/2025/05/17/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 <meta property="og:site_name" content="codeoapper">
-<meta property="og:description" content="常用的命令部署成功后，安装包的在hexoblog路径hexo g 生成静态网页hexo d 部署到githubhexo clean 清楚hexo缓存，即清除public文件夹hexo g –d 生成并部署 https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_42365530&#x2F;article&#x2F;details&#x2F;107750003https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;60578">
+<meta property="og:description" content="github pages搭建博客1） hexo安装    官网有命令（https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;） 2）创建博客文件夹    这里博客文件夹名字为：my-blog；    这里的文件夹和github仓库文件，不是一个，github仓库文件是hexo 推送过去，因此本地博客文件夹最好再单独建立一个github仓库作备份。 hexo init my-blog cd my-blog">
 <meta property="og:locale">
+<meta property="og:image" content="http://www.codepapper.com/image-1.png">
+<meta property="og:image" content="http://www.codepapper.com/image-2.png">
 <meta property="article:published_time" content="2025-05-17T03:19:11.000Z">
-<meta property="article:modified_time" content="2025-05-17T04:13:08.682Z">
+<meta property="article:modified_time" content="2025-07-19T15:01:00.366Z">
 <meta property="article:author" content="skzeng">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.codepapper.com/image-1.png">
   
   
   
@@ -46,7 +49,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"skzeng","sameAs":[]},"dateCreated":"2025-05-17T11:19:11+08:00","dateModified":"2025-05-17T12:13:08+08:00","datePublished":"2025-05-17T11:19:11+08:00","description":"","headline":"hexo+github搭建个人博客","mainEntityOfPage":{"@type":"WebPage","@id":"http://www.codepapper.com/2025/05/17/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"},"publisher":{"@type":"Organization","name":"skzeng","sameAs":[]},"url":"http://www.codepapper.com/2025/05/17/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/","image":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"skzeng","sameAs":[]},"dateCreated":"2025-05-17T11:19:11+08:00","dateModified":"2025-07-19T23:01:00+08:00","datePublished":"2025-05-17T11:19:11+08:00","description":"","headline":"hexo+github搭建个人博客","mainEntityOfPage":{"@type":"WebPage","@id":"http://www.codepapper.com/2025/05/17/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"},"publisher":{"@type":"Organization","name":"skzeng","sameAs":[]},"url":"http://www.codepapper.com/2025/05/17/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/","image":[]}</script>
   
 </head>
 <body>
@@ -61,11 +64,11 @@
 <nav class="menu dis-select"></nav>
 </div>
 <div class="widgets">
-<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="Search"></form><div id="search-result"></div><div class="search-no-result">No Results!</div></div>
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站內搜尋"></form><div id="search-result"></div><div class="search-no-result">沒有找到內容！</div></div>
 
 
 
-<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">Recent Update</span></div><div class="widget-body fs14"><a class="item title" href="/2025/05/17/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"><span class="title">hexo+github搭建个人博客</span></a></div></widget>
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/05/17/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"><span class="title">hexo+github搭建个人博客</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -76,9 +79,9 @@
 
 <div class="article banner top">
   <div class="content">
-    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">Posted on: <time datetime="2025-05-17T03:19:11.000Z">2025-05-17</time></span><span class="sep updated"></span><span class="text updated">Updated on: <time datetime="2025-05-17T04:13:08.682Z">2025-05-17</time></span></div></div></div>
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">首頁</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">網誌</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">發布於：<time datetime="2025-05-17T03:19:11.000Z">2025-05-17</time></span><span class="sep updated"></span><span class="text updated">更新於：<time datetime="2025-07-19T15:01:00.366Z">2025-07-19</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -89,13 +92,50 @@
     </div>
     
   </div>
-  </div><article class="md-text content"><h2 id="常用的命令"><a href="#常用的命令" class="headerlink" title="常用的命令"></a>常用的命令</h2><p>部署成功后，安装包的在hexoblog路径<br>hexo g 生成静态网页<br>hexo d 部署到github<br>hexo clean 清楚hexo缓存，即清除public文件夹<br>hexo g –d 生成并部署</p>
+  </div><article class="md-text content"><h2 id="github-pages搭建博客"><a href="#github-pages搭建博客" class="headerlink" title="github pages搭建博客"></a>github pages搭建博客</h2><p>1） hexo安装<br>    官网有命令（<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/%EF%BC%89">https://hexo.io/zh-cn/）</a></p>
+<p>2）创建博客文件夹<br>    这里博客文件夹名字为：my-blog；<br>    这里的文件夹和github仓库文件，不是一个，github仓库文件是hexo 推送过去，因此本地博客文件夹最好再单独建立一个github仓库作备份。</p>
+<pre><code>hexo init my-blog
+cd my-blog  
+npm install
+</code></pre>
+<p>3）本地启动预览<br>    hexo server<br>    <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
+<p>4）生成静态网站<br>    hexo g</p>
+<p>5）部署到github pages</p>
+<pre><code>1.创建一个同名仓库，创建页面：https://github.com/new
+2. 安装部署插件
+    npm install hexo-deployer-git --save
+3. 修改 _config.yml 末尾，添加部署配置：
+    deploy:
+    type: git
+    repo: https://github.com/yourusername/yourusername.github.io.git
+    branch: main  # 或 master，与你仓库默认分支一致
+4. 部署
+    hexo clean
+    hexo generate
+    hexo deploy
+    # 简写命令
+    hexo g -d
+5.访问
+    https://yourusername.github.io
+</code></pre>
+<h2 id="github-pages域名绑定"><a href="#github-pages域名绑定" class="headerlink" title="github pages域名绑定"></a>github pages域名绑定</h2><ol>
+<li><p>购买域名<br>.com、.net老牌顶级域名比较通用，尤其是做国外广告插入分配权重较高，价格较贵；<br>.tech新顶级域名，第一年较便宜，后面会很贵，一般比.com等老牌域名便宜；</p>
+<p> 阿里云域名购买网站：<a target="_blank" rel="noopener" href="https://wanwang.aliyun.com/domain">https://wanwang.aliyun.com/domain</a>)</p>
+</li>
+<li><p>域名解析</p>
+</li>
+</ol>
+<p>域名解析控制台：<a target="_blank" rel="noopener" href="https://dc.console.aliyun.com/next/index?spm=5176.27097949.J_9138996270.6.766d4b594XWKpv#/domain-list/all">https://dc.console.aliyun.com/next/index?spm=5176.27097949.J_9138996270.6.766d4b594XWKpv#/domain-list/all</a><br><img src="/image-1.png" alt="alt text"><br>点击解析<br><img src="/image-2.png" alt="alt text"></p>
+<ol start="3">
+<li>本地public文件夹，或者github仓库增加CNAME文件，内容为域名比如<a target="_blank" rel="noopener" href="http://www.codepapper.com(在本地文件夹的public目录,hexo/">www.codepapper.com（在本地文件夹的public目录，hexo</a> clean时该文件夹会更新CNAME会消失，导致域名绑定失效，需要重新创建）</li>
+</ol>
+<h2 id="常用的命令"><a href="#常用的命令" class="headerlink" title="常用的命令"></a>常用的命令</h2><p>部署成功后，安装包的在hexoblog路径<br>hexo g 生成静态网页<br>hexo d 部署到github<br>hexo clean 清楚hexo缓存，即清除public文件夹<br>hexo g –d 生成并部署</p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42365530/article/details/107750003">https://blog.csdn.net/weixin_42365530/article/details/107750003</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/60578464">https://zhuanlan.zhihu.com/p/60578464</a></p>
-<p><strong>hexo主题</strong><br><a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<p><strong>hexo主题商店</strong><br><a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
 </article>
 <div class="article-footer">
     <section id="license">
-      <div class="header"><span>License</span></div>
+      <div class="header"><span>授權條款</span></div>
       <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
 </div>
     </section>
@@ -103,7 +143,7 @@
 
 </div>
 
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/2025/07/19/Yolo/">2025-07-19</a></div><div class="item" id="next"></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">較新文章</div><a href="/2025/07/19/Yolo/">2025-07-19</a></div><div class="item" id="next"></div></section></div>
 
 
 
@@ -117,7 +157,7 @@
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">On This Page</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="toc-text">常用的命令</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>Scroll to Top</span></a></div></widget>
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目錄</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#github-pages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="toc-text">github pages搭建博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#github-pages%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A"><span class="toc-text">github pages域名绑定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="toc-text">常用的命令</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到頂部</span></a></div></widget>
 </div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
@@ -133,10 +173,10 @@
   window.canonical = {"originalHost":null,"officialHosts":["localhost"],"encoded":""};
   const ctx = {
     date_suffix: {
-      just: `Just`,
-      min: `minutes ago`,
-      hour: `hours ago`,
-      day: `days ago`,
+      just: `剛剛`,
+      min: `分鐘前`,
+      hour: `小時前`,
+      day: `天前`,
     },
     root : `/`,
     tag_plugins: {
@@ -591,9 +631,9 @@
     utils.dark.method.toggle.start();
 
     const messages = {
-      light: `Switched to Light Mode`,
-      dark: `Switched to Dark Mode`,
-      auto: `Switched to Auto Mode`,
+      light: `切換到淺色模式`,
+      dark: `切換到深色模式`,
+      auto: `切換到跟隨系統配色`,
     }
     hud?.toast?.(messages[newTheme])
   }
