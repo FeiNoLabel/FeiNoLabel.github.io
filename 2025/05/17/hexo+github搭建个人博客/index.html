@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="cn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>hexo+github搭建个人博客 - codepapper</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="codepapper"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="codepapper"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="github pages搭建博客1） hexo安装    官网有命令（https:&amp;#x2F;&amp;#x2F;hexo.io&amp;#x2F;zh-cn&amp;#x2F;） 2）创建博客文件夹    这里博客文件夹名字为：my-blog；    这里的文件夹和github仓库文件，不是一个，github仓库文件是hexo 推送过去，因此本地博客文件夹最好再单独建立一个github仓库作备份。 hexo init my-blog cd my-blog"><meta property="og:type" content="article"><meta property="og:title" content="hexo+github搭建个人博客"><meta property="og:url" content="http://www.codepapper.com/2025/05/17/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"><meta property="og:site_name" content="codepapper"><meta property="og:description" content="github pages搭建博客1） hexo安装    官网有命令（https:&amp;#x2F;&amp;#x2F;hexo.io&amp;#x2F;zh-cn&amp;#x2F;） 2）创建博客文件夹    这里博客文件夹名字为：my-blog；    这里的文件夹和github仓库文件，不是一个，github仓库文件是hexo 推送过去，因此本地博客文件夹最好再单独建立一个github仓库作备份。 hexo init my-blog cd my-blog"><meta property="og:locale" content="cn"><meta property="og:image" content="http://www.codepapper.com/img/og_image.png"><meta property="article:published_time" content="2025-05-17T03:19:11.000Z"><meta property="article:modified_time" content="2025-07-19T15:15:56.781Z"><meta property="article:author" content="skzeng"><meta property="article:tag" content="code、papper"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://www.codepapper.com/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://www.codepapper.com/2025/05/17/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"},"headline":"hexo+github搭建个人博客","image":["http://www.codepapper.com/img/og_image.png"],"datePublished":"2025-05-17T03:19:11.000Z","dateModified":"2025-07-19T15:15:56.781Z","author":{"@type":"Person","name":"skzeng"},"publisher":{"@type":"Organization","name":"codepapper","logo":{"@type":"ImageObject"}},"description":"github pages搭建博客1） hexo安装    官网有命令（https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;） 2）创建博客文件夹    这里博客文件夹名字为：my-blog；    这里的文件夹和github仓库文件，不是一个，github仓库文件是hexo 推送过去，因此本地博客文件夹最好再单独建立一个github仓库作备份。 hexo init my-blog cd my-blog"}</script><link rel="canonical" href="http://www.codepapper.com/2025/05/17/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">codepapper</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2025-05-17T03:19:11.000Z" title="2025/5/17 11:19:11">2025-05-17</time></span><span class="level-item">Updated&nbsp;<time dateTime="2025-07-19T15:15:56.781Z" title="2025/7/19 23:15:56">2025-07-19</time></span></div></div><h1 class="title is-3 is-size-4-mobile">hexo+github搭建个人博客</h1><div class="content"><h2 id="github-pages搭建博客"><a href="#github-pages搭建博客" class="headerlink" title="github pages搭建博客"></a>github pages搭建博客</h2><p>1） hexo安装<br>    官网有命令（<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/%EF%BC%89">https://hexo.io/zh-cn/）</a></p>
+<p>2）创建博客文件夹<br>    这里博客文件夹名字为：my-blog；<br>    这里的文件夹和github仓库文件，不是一个，github仓库文件是hexo 推送过去，因此本地博客文件夹最好再单独建立一个github仓库作备份。</p>
+<pre><code>hexo init my-blog
+cd my-blog  
+npm install
+</code></pre>
+<p>3）本地启动预览<br>    hexo server<br>    <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
+<p>4）生成静态网站<br>    hexo g</p>
+<p>5）部署到github pages</p>
+<pre><code>1.创建一个同名仓库，创建页面：https://github.com/new
+2. 安装部署插件
+    npm install hexo-deployer-git --save
+3. 修改 _config.yml 末尾，添加部署配置：
+    deploy:
+    type: git
+    repo: https://github.com/yourusername/yourusername.github.io.git
+    branch: main  # 或 master，与你仓库默认分支一致
+4. 部署
+    hexo clean
+    hexo generate
+    hexo deploy
+    # 简写命令
+    hexo g -d
+5.访问
+    https://yourusername.github.io
+</code></pre>
+<h2 id="github-pages域名绑定"><a href="#github-pages域名绑定" class="headerlink" title="github pages域名绑定"></a>github pages域名绑定</h2><ol>
+<li><p>购买域名<br>.com、.net老牌顶级域名比较通用，尤其是做国外广告插入分配权重较高，价格较贵；<br>.tech新顶级域名，第一年较便宜，后面会很贵，一般比.com等老牌域名便宜；</p>
+<p> 阿里云域名购买网站：<a target="_blank" rel="noopener" href="https://wanwang.aliyun.com/domain">https://wanwang.aliyun.com/domain</a></p>
+</li>
+<li><p>域名解析</p>
+</li>
+</ol>
+<p>域名解析控制台：<a target="_blank" rel="noopener" href="https://dc.console.aliyun.com/next/index?spm=5176.27097949.J_9138996270.6.766d4b594XWKpv#/domain-list/all">https://dc.console.aliyun.com/next/index?spm=5176.27097949.J_9138996270.6.766d4b594XWKpv#/domain-list/all</a></p>
+<p>点击解析</p>
+<ol start="3">
+<li>本地public文件夹，或者github仓库增加CNAME文件，内容为域名比如<a target="_blank" rel="noopener" href="http://www.codepapper.com(在本地文件夹的public目录,hexo/">www.codepapper.com（在本地文件夹的public目录，hexo</a> clean时该文件夹会更新CNAME会消失，导致域名绑定失效，需要重新创建）</li>
+</ol>
+<h2 id="常用的命令"><a href="#常用的命令" class="headerlink" title="常用的命令"></a>常用的命令</h2><p>部署成功后，安装包的在hexoblog路径<br>hexo g 生成静态网页<br>hexo d 部署到github<br>hexo clean 清楚hexo缓存，即清除public文件夹<br>hexo g –d 生成并部署</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42365530/article/details/107750003">https://blog.csdn.net/weixin_42365530/article/details/107750003</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/60578464">https://zhuanlan.zhihu.com/p/60578464</a></p>
+<p><strong>hexo主题商店</strong><br><a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2025/07/19/Yolo/"><i class="level-item fas fa-chevron-left"></i><span class="level-item"> </span></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">codepapper</a><p class="is-size-7"><span>&copy; 2025 skzeng</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><!--!--><script data-pjax src="/js/main.js" defer></script><!--!--></body></html>
